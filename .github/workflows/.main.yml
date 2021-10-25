@@ -33,6 +33,8 @@ jobs:
     # run only when code is compiling and tests are passing
     runs-on: ubuntu-latest
   # steps to perform in job
+    env:
+      working-directory: ./simple-api
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
